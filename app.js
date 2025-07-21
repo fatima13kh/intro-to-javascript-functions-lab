@@ -183,11 +183,11 @@ Complete the exercise in the space below:
 
 function convertTemperature(temp, scale) {
   if (scale.toUpperCase() === 'C') {
-    // Convert Celsius to Fahrenheit
-    return (temp * 9/5) + 32;
+    const fahrenheit = (temp * 9/5) + 32;
+    return `${fahrenheit} (Fahrenheit)`;
   } else if (scale.toUpperCase() === 'F') {
-    // Convert Fahrenheit to Celsius
-    return (temp - 32) * 5/9;
+    const celsius = (temp - 32) * 5/9;
+    return `${celsius} (Celsius)`;
   } else {
     return 'Invalid scale'; 
   }
